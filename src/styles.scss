@@ -1,1 +1,123 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css');//Importando o flexbox grid
+@import "_variables.scss";//SCSS Variaveis
+
+
+
+
+html, body { height: 100%; }
+
+body {
+	margin: 0; 
+	font-family: 'Roboto', sans-serif; 
+	background: #F6F6F9;
+}
+
+.navbar { //navbar
+	background-color: $light;
+
+	.button {
+		background: $primary;
+	}
+
+	.button-light {
+		border: 1px solid #E0E0E0;
+		color: $light-blue;
+	}
+
+	button {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+}
+
+.card-container {
+	max-width: 398px;
+	.card {
+		color: #000;
+		background: $light;
+		border: 1px solid #EBEBEB;
+		border-radius: 10px;
+		box-shadow: none;
+		padding: 2.2rem;
+	
+		.card-header {
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+			font-size: 16px;
+			color: $grey;
+		}
+
+		h3 {
+			text-align: center;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		#urgency {
+			color: $red;
+		}
+
+		#student {
+			color: $primary;
+		}
+
+		#specialist {
+			color: $purple;
+		}
+
+		#nursing {
+			color: $green;
+		}
+
+		button {
+			border: 1px solid #E0E0E0;
+			padding-right: 2rem;
+			padding-left: 2rem;
+			color: $light-grey;
+		}
+
+		#urgency-btn {
+			color: $red;
+		}
+
+		#nursing-btn {
+			color: $green;
+		}
+
+		.card-button {
+			padding-top:1rem;
+		}
+
+		.top-card {
+			width: 40px;
+			height: 5px;
+			border-radius: 0px 0px 5px 5px;
+			margin-top: -2.2rem;
+			margin-bottom: 1rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#top-urgency {
+			background: $red no-repeat padding-box;
+		}
+
+		#top-specialist {
+			background: $purple no-repeat padding-box;
+		}
+
+		#top-student {
+			background: $primary no-repeat padding-box;
+		}
+
+		#top-nursing {
+			background: $green no-repeat padding-box;
+		}
+	}
+}
