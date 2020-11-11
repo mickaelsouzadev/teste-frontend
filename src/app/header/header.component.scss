@@ -3,4 +3,14 @@
 	background: url('../../assets/img/banner.png');
 	background-repeat: no-repeat;
   	background-size: cover;
+  	// background-position: 75% 75%; 
+}
+
+@media(max-width: 1243px) {
+	.banner {
+		background-position: 90% 80%;
+		max-height: 375px;
+		// background-size: 75% 100%;
+	}
+	
 }

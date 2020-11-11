@@ -5,7 +5,7 @@
 
 
 
-html, body { height: 100%; }
+html, body { height: 100%; overflow-x: hidden;}
 
 body {
 	margin: 0; 
@@ -79,6 +79,11 @@ body {
 			color: $green;
 		}
 
+		.card-button {
+			display: flex;
+			justify-content: center;
+		}
+
 		button {
 			border: 1px solid #E0E0E0;
 			padding-right: 2rem;
@@ -128,7 +133,90 @@ body {
 }
 
 .divider {
-	width: 100%;
+	// width: 100%;
 	height: 208px;
 	background: rgba(23, 103, 229, 0.15) 0% 0% no-repeat padding-box;
+}
+
+.gradient-card-container {
+	// height: 200px;
+	// width: 618px;
+	
+
+	.gradient-card {
+		margin-top: 30px;
+		margin-bottom: 4rem;
+		// height: 168px;
+		max-width: 586px;
+		background: transparent linear-gradient(89deg, #397AE1 0%, #ADDBEF 100%) 0% 0% no-repeat padding-box;
+		box-shadow: 0px 4px 8px rgba(23, 103, 229, 0.15);
+		border-radius: 15px;
+
+		h3 {
+			margin-top: 1rem;
+			font: normal normal bold 32px Roboto;
+			color: #fff;
+		}
+
+		p {
+			margin-right: 1rem;
+			margin-left: 1rem;
+			font-size: 14px;
+			text-align:center;
+			margin-top: 0.5rem;
+		}
+
+		button {
+			background: $light;
+			color: $primary;
+			box-shadow: 0px 4px 12px rgba(3, 44, 178, 0.24);
+			border-radius: 5px;
+
+		}
+	}
+}
+
+.footer {
+	padding-top: 6rem;
+	padding-bottom: 5rem;
+	
+	.footer-container {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+	}
+
+	.social-icon {
+		margin: 0.4rem;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: $ultra-light-grey;
+		color: $light;
+		text-align: center;
+		display: flex;
+    	align-items: center;
+    	justify-content: space-around;
+		font-size: 20px;
+
+	}
+	#contact-us {
+		margin-left: 1rem;
+		width: 300px;
+
+		color: $ultra-light-grey;
+
+		h4 {
+			margin-top: 5px;
+			font: normal normal bold 26px Roboto;
+			margin-bottom: -1px;
+		}
+
+		p {
+			font: normal normal normal 18px Roboto;
+		}
+	}
+
+	
 }
