@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+<!-- <div class="container-fluid">
+  <div class="row">
+  	
+  		<app-card *ngFor="let card of cards; let i" [title]="card.title" [text]="card.text" [color]="card.color"></app-card>
+	
+  
+ 
+ </div>
+</div> -->
+<div class="container-fluid">
+	<div class="row">
+	    <div *ngFor="let card of cards;" class="col-lg">
+	      <div class="card-container">
+	        <mat-card class="card">
+	          <div class="top-card" [ngStyle]="{ 'background-color': card.color }"></div>
+	          <h3 [ngStyle]="{ 'color': card.color }">{{ card.title }}</h3>
+	          <mat-card-content>
+	            <p>
+	            	{{ card.text }}
+	            </p>
+	          </mat-card-content>
+	          <div class="row center-lg card-button">
+	              <div [hidden]="!(card.title === 'Student' || card.title === 'Specialist')" >
+	                 <button mat-button>Em breve</button>
+	              </div>
+	              <div [hidden]="(card.title === 'Student' || card.title === 'Specialist')">
+	              	<button mat-button [ngStyle]="{ 'color': card.color }">Saiba mais</button>
+	              </div>
+	          </div>
+	        </mat-card>
+	      </div>
+	    </div>
+	</div>
+	 
+</div>
+<app-gradient-card></app-gradient-card>
+<app-footer></app-footer>
